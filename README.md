@@ -3,7 +3,7 @@
 
 
 <div align="center">
-    <img src="https://i.postimg.cc/sD2ZFx9x/file-00000000013882119c6bfbfb30235ad4.png" width="120" height="120" />
+    <img src="https://i.ibb.co/vxL81f4Y/file-00000000cfc88208941479935cfc0750.png" width="120" height="120" />
     <h1>🎵 ViWaves</h1>
     <p><b>Continuing the legacy of a legendary Android app for streaming music from YouTube Music</b></p>
     <p>Seamless • Lightweight • Powerful</p>
