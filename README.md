@@ -3,8 +3,8 @@
 
 
 <div align="center">
-    <img src="./app/src/main/ic_launcher-playstore.png" width="120" height="120" />
-    <h1>🎵 ViTune Repatched</h1>
+    <img src="https://i.postimg.cc/sD2ZFx9x/file-00000000013882119c6bfbfb30235ad4.png" width="120" height="120" />
+    <h1>🎵 ViWaves</h1>
     <p><b>Continuing the legacy of a legendary Android app for streaming music from YouTube Music</b></p>
     <p>Seamless • Lightweight • Powerful</p>
 </div>
