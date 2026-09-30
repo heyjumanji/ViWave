@@ -5,7 +5,7 @@
 <div align="center">
     <img src="https://i.ibb.co/vxL81f4Y/file-00000000cfc88208941479935cfc0750.png" width="120" height="120" />
     <h1>🎵 ViWaves</h1>
-    <p><b>Continuing the legacy of a legendary Android app for streaming music from YouTube Music</b></p>
+    <p><b>Continuing the legacy of a legendary Android app for streaming music from YouTube Music Vimusic but with more added features which i always thought to have in this app</b></p>
     <p>Seamless • Lightweight • Powerful</p>
 </div>
 
