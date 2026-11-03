@@ -1,100 +1,267 @@
-> [!NOTE]
-> App development is on a rocket speed, soon you will see updates.
-
-
 <div align="center">
-    <img src="https://i.ibb.co/vxL81f4Y/file-00000000cfc88208941479935cfc0750.png" width="120" height="120" />
-    <h1>🎵 ViWaves</h1>
-    <p><b>Continuing the legacy of a legendary Android app for streaming music from YouTube Music Vimusic but with more added features which i always thought to have in this app</b></p>
-    <p>Seamless • Lightweight • Powerful</p>
+
+<img src="https://i.ibb.co/vxL81f4Y/file-00000000cfc88208941479935cfc0750.png" width="112" alt="ViWaves Logo" />
+
+# ViWaves
+
+**A modern, open-source music streaming client for Android.**
+
+A continuation of the ViMusic legacy, bringing together online streaming, local music, powerful playlist integrations, and a refined listening experience.
+
+<br />
+
+<a href="https://github.com/heyjumanji/ViWave/releases/latest">
+  <img src="https://img.shields.io/badge/Download-APK-8B7CF6?style=for-the-badge&logo=android&logoColor=white" alt="Download APK" />
+</a>
+<a href="https://github.com/heyjumanji/ViWave">
+  <img src="https://img.shields.io/badge/Source_Code-GitHub-353344?style=for-the-badge&logo=github&logoColor=white" alt="Source Code" />
+</a>
+<a href="https://github.com/heyjumanji/ViWave/issues">
+  <img src="https://img.shields.io/badge/Feedback-Report_Issue-353344?style=for-the-badge&logo=github&logoColor=white" alt="Feedback" />
+</a>
+
+<br /><br />
+
+<!-- Repository Statistics -->
+
+<a href="https://github.com/heyjumanji/ViWave/releases">
+  <img src="https://img.shields.io/github/downloads/heyjumanji/ViWave/total?style=for-the-badge&label=downloads&labelColor=252538&color=353344&logo=github&logoColor=white" alt="Downloads" />
+</a>
+<a href="https://github.com/heyjumanji/ViWave/stargazers">
+  <img src="https://img.shields.io/github/stars/heyjumanji/ViWave?style=for-the-badge&label=stars&labelColor=252538&color=353344&logo=github&logoColor=white" alt="Stars" />
+</a>
+
+<a href="https://github.com/heyjumanji/ViWave/network/members">
+  <img src="https://img.shields.io/github/forks/heyjumanji/ViWave?style=for-the-badge&label=forks&labelColor=252538&color=353344&logo=git&logoColor=white" alt="Forks" />
+</a>
+<img src="https://img.shields.io/badge/Android-Supported-353344?style=for-the-badge&labelColor=252538&logo=android&logoColor=8B7CF6" alt="Android" />
+
+<a href="https://github.com/heyjumanji/ViWave/commits">
+  <img src="https://img.shields.io/github/commit-activity/y/heyjumanji/ViWave?style=for-the-badge&label=commits%2Fyear&labelColor=252538&color=353344&logo=git&logoColor=white" alt="Commits" />
+</a>
+<a href="https://github.com/heyjumanji/ViWave/releases/latest">
+  <img src="https://img.shields.io/github/v/release/heyjumanji/ViWave?style=for-the-badge&label=release&labelColor=252538&color=353344&logo=github&logoColor=white" alt="Release" />
+</a>
+
+<a href="https://github.com/heyjumanji/ViWave/issues">
+  <img src="https://img.shields.io/github/issues/heyjumanji/ViWave?style=for-the-badge&label=issues&labelColor=252538&color=353344&logo=github&logoColor=white" alt="Issues" />
+</a>
+<a href="https://github.com/heyjumanji/ViWave/blob/main/LICENSE">
+  <img src="https://img.shields.io/github/license/heyjumanji/ViWave?style=for-the-badge&label=license&labelColor=252538&color=353344&logo=opensourceinitiative&logoColor=white" alt="License" />
+</a>
+
+<a href="#roadmap">
+  <img src="https://img.shields.io/badge/Roadmap-View-353344?style=for-the-badge&labelColor=252538&logo=github&logoColor=white" alt="Roadmap" />
+</a>
+<a href="YOUR_DISCORD_INVITE_LINK">
+  <img src="https://img.shields.io/badge/Discord-Join_Server-353344?style=for-the-badge&labelColor=252538&logo=discord&logoColor=7289DA" alt="Discord" />
+</a>
+
 </div>
 
 ---
 
-## 📱 Preview
+## About
 
-<p align="center">
-  <img src="./fastlane/metadata/android/en-US/images/phoneScreenshots/1.png" width="30%" />
-  <img src="./fastlane/metadata/android/en-US/images/phoneScreenshots/2.png" width="30%" />
-  <img src="./fastlane/metadata/android/en-US/images/phoneScreenshots/3.png" width="30%" />
-</p>
+ViWaves is an open-source Android music player inspired by the legacy of ViMusic.
 
-<p align="center">
-  <img src="./fastlane/metadata/android/en-US/images/phoneScreenshots/4.png" width="30%" />
-  <img src="./fastlane/metadata/android/en-US/images/phoneScreenshots/5.png" width="30%" />
-  <img src="./fastlane/metadata/android/en-US/images/phoneScreenshots/6.png" width="30%" />
-</p>
+It brings online music streaming, local music playback, playlist integrations, lyrics, and personalization together in one application.
+
+The goal is simple: provide a clean, feature-rich, and enjoyable music listening experience without unnecessary complexity.
 
 ---
 
-## ✨ Features
+## Screenshots
 
-- 🎧 Stream (almost) any song or video from YouTube Music  
-- 📁 Play local music from your device  
-- 🔊 Background playback support  
-- 💾 Offline caching for uninterrupted listening  
-- 🔍 Search songs, albums, artists, videos, and playlists  
-- 🎼 Discover music by mood and genre  
-- 📥 Import playlists from YouTube  
-- 📝 Lyrics support (synced & editable)  
-- 📚 Manage playlists locally or sync with the cloud  
-- 🎨 Highly customizable (Material You, dynamic themes)  
-- ⚖️ Audio normalization for consistent volume  
-- 🚗 Android Auto support  
-- 🔗 Open YouTube & YouTube Music links directly in ViTune  
-- ⚡ Extremely lightweight APK
-- 🎤 Better Lyrics to support lyrics sync
-- ⭐ Highest quality on yt premium (Opus 256k)
-- Lastfm Integration build in
+<div align="center">
 
----
+<table>
+<tr>
+<td align="center" width="50%">
+<img src="https://iili.io/nPFaBHJ.md.jpg" width="100%" alt="Now Playing" />
+<br /><b>Now Playing</b>
+</td>
+<td align="center" width="50%">
+<img src="https://iili.io/nPFwO3x.md.jpg" width="100%" alt="Lyrics" />
+<br /><b>Lyrics</b>
+</td>
+</tr>
 
-## 🛠️ To-Do
+<tr>
+<td align="center" width="50%">
+<img src="https://iili.io/nPFvjdG.md.jpg" width="100%" alt="Quick Picks" />
+<br /><b>Quick Picks</b>
+</td>
+<td align="center" width="50%">
+<img src="https://iili.io/nPFtBDX.md.jpg" width="100%" alt="Discovery" />
+<br /><b>Discover</b>
+</td>
+</tr>
 
-- [ ] Import playlist from Spotify.
-- [ ] Add Lossless audio support
-- [ ] UI/UX refinements and animations 
-- [ ] Bug fixes and performance improvements  
+<tr>
+<td align="center" width="50%">
+<img src="https://iili.io/nPFSYtp.md.jpg" width="100%" alt="Artist Page" />
+<br /><b>Artist Page</b>
+</td>
+<td align="center" width="50%">
+<img src="https://iili.io/nPFrp5u.md.jpg" width="100%" alt="Artist Profile" />
+<br /><b>Artist Profile</b>
+</td>
+</tr>
 
----
+<tr>
+<td align="center" colspan="2">
+<img src="https://iili.io/nPFPeiQ.md.jpg" width="50%" alt="Spotify Imported Playlist" />
+<br /><b>Spotify Imported Playlist</b>
+</td>
+</tr>
+</table>
 
-## 🚀 Installation
-
-<p align="center">
-  <a href="https://github.com/25huizengek1/ViTune/releases/latest">
-    <img src="https://github.com/machiav3lli/oandbackupx/blob/034b226cea5c1b30eb4f6a6f313e4dadcbb0ece4/badge_github.png"
-    alt="Get it on GitHub" height="80"/>
-  </a>
-
-  <a href="https://repo.vitune.app/">
-    <img src="https://fdroid.gitlab.io/artwork/badge/get-it-on.png"
-    alt="Get it on F-Droid" height="80"/>
-  </a>
-
-  <a href="https://apps.obtainium.imranr.dev/redirect?r=obtainium://add/https://github.com/25huizengek1/ViTune/">
-    <img src="https://github.com/ImranR98/Obtainium/blob/main/assets/graphics/badge_obtainium.png"
-    alt="Get it on Obtainium" height="54"/>
-  </a>
-</p>
+</div>
 
 ---
 
-## 🙌 Acknowledgments
+## Features
 
-- [**YouTube-Internal-Clients**](https://github.com/zerodytrash/YouTube-Internal-Clients)  
-- [**Ionicons**](https://github.com/ionic-team/ionicons)  
-- [**Flaticon – Ilham Fitrotul Hayat**](https://www.flaticon.com/authors/ilham-fitrotul-hayat)  
+### Music & Playback
+
+- Stream almost any song or music video from YouTube Music.
+- Play local music stored on your device.
+- Background playback.
+- Offline caching for listening without an internet connection.
+- Audio normalization for consistent volume.
+- High-quality audio streaming, including Opus 256 kbps where available.
+- Open YouTube and YouTube Music links directly in ViWaves.
+
+### Music Discovery
+
+- Search for songs, albums, artists, videos, and playlists.
+- Discover music by mood and genre.
+- Explore artists and their music.
+- Quick Picks for discovering music.
+
+### Playlist Management
+
+- Import playlists from YouTube.
+- Import Spotify playlists.
+- Create and manage local playlists.
+- Cloud playlist synchronization.
+
+### Lyrics
+
+- Synchronized lyrics.
+- Editable lyrics.
+- Better Lyrics integration.
+
+### Personalization
+
+- Material You design.
+- Dynamic color themes.
+- Clean and refined user interface.
+
+### Android Integration
+
+- Android Auto support.
+- Lightweight APK.
+- Direct handling of YouTube and YouTube Music links.
+
+### Last.fm
+
+- Built-in Last.fm integration.
+- Connect your listening experience with Last.fm.
 
 ---
 
-## ⚠️ Disclaimer
+## Installation
 
-This project is **not affiliated with, endorsed, or supported by YouTube or Google LLC**.
+### GitHub Releases
 
-All trademarks and intellectual property belong to their respective owners.
+<a href="https://github.com/heyjumanji/ViWave/releases/latest">
+  <img src="https://img.shields.io/badge/GitHub-Download_APK-252538?style=for-the-badge&logo=github&logoColor=white" alt="Download from GitHub" />
+</a>
+
+1. Visit the [latest releases](https://github.com/heyjumanji/ViWave/releases/latest).
+2. Download the latest APK.
+3. Install it on your Android device.
+
+### Obtainium
+
+<a href="https://apps.obtainium.imranr98.dev/redirect?r=obtainium://add/https://github.com/heyjumanji/ViWave/">
+  <img src="https://github.com/ImranR98/Obtainium/blob/main/assets/graphics/badge_obtainium.png" height="48" alt="Get it on Obtainium" />
+</a>
+
+You can add ViWaves to Obtainium to receive updates directly from GitHub releases.
+
+---
+
+## Roadmap
+
+| Feature | Status |
+|---|---|
+| YouTube Music streaming | Available |
+| Local music playback | Available |
+| Background playback | Available |
+| Offline caching | Available |
+| Spotify playlist import | Available |
+| Last.fm integration | Available |
+| Lyrics integration | Available |
+| Android Auto | Available |
+| Lossless audio support | Planned |
+| UI/UX refinements and animations | In Progress |
+| Bug fixes and performance improvements | Ongoing |
+
+---
+
+## Contributing
+
+Contributions, suggestions, and bug reports are welcome.
+
+If you want to improve ViWaves:
+
+1. Fork this repository.
+2. Create a new branch.
+3. Make your changes.
+4. Submit a pull request.
+
+Found a bug or have a feature suggestion? Open an issue on GitHub.
+
+<a href="https://github.com/heyjumanji/ViWave/issues">
+  <img src="https://img.shields.io/badge/Report-a_Bug-353344?style=for-the-badge&logo=github&logoColor=white" alt="Report a Bug" />
+</a>
+
+---
+
+## Acknowledgements
+
+ViWaves builds upon the work and contributions of the open-source community.
+
+Special thanks to:
+
+- [ViMusic](https://github.com/vfsfitvnm/ViMusic) for the original inspiration.
+- [YouTube Internal Clients](https://github.com/zerodytrash/YouTube-Internal-Clients) for valuable research.
+- [Ionicons](https://github.com/ionic-team/ionicons) for icon resources.
+- [Ilham Fitrotul Hayat](https://www.flaticon.com/authors/ilham-fitrotul-hayat) for design resources.
+
+And everyone who contributes to open-source development.
+
+---
+
+## Disclaimer
+
+ViWaves is an independent, open-source project. It is not affiliated with, endorsed by, or associated with YouTube, YouTube Music, Google LLC, or Spotify.
+
+All trademarks and logos belong to their respective owners.
 
 ---
 
 <div align="center">
-  <sub>Made with ❤️ for music lovers</sub>
+
+**Made with care for music lovers.**
+
+If you enjoy ViWaves, consider giving the repository a ⭐.
+
+<a href="https://github.com/heyjumanji/ViWave">
+  <img src="https://img.shields.io/github/stars/heyjumanji/ViWave?style=social" alt="GitHub Stars" />
+</a>
+
 </div>
