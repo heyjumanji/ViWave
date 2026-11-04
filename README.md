@@ -130,7 +130,7 @@ The goal is simple: provide a clean, feature-rich, and enjoyable music listening
 - Background playback.
 - Offline caching for listening without an internet connection.
 - Audio normalization for consistent volume.
-- High-quality audio streaming, including Opus 256 kbps where available.
+- Hiress Lossless audio including High-quality streaming and Opus 256 kbps where available.
 - Open YouTube and YouTube Music links directly in ViWaves.
 
 ### Music Discovery
@@ -139,6 +139,9 @@ The goal is simple: provide a clean, feature-rich, and enjoyable music listening
 - Discover music by mood and genre.
 - Explore artists and their music.
 - Quick Picks for discovering music.
+- Lastfm Recommendations.
+- Spotify Recommendations.
+- New Music Discovery from Spotify.
 
 ### Playlist Management
 
@@ -149,7 +152,7 @@ The goal is simple: provide a clean, feature-rich, and enjoyable music listening
 
 ### Lyrics
 
-- Synchronized lyrics.
+- Word synchronized lyrics.
 - Editable lyrics.
 - Better Lyrics integration.
 
@@ -206,7 +209,7 @@ You can add ViWaves to Obtainium to receive updates directly from GitHub release
 | Last.fm integration | Available |
 | Lyrics integration | Available |
 | Android Auto | Available |
-| Lossless audio support | Planned |
+| Lossless audio support | Available |
 | UI/UX refinements and animations | In Progress |
 | Bug fixes and performance improvements | Ongoing |
 
