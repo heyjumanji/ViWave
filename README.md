@@ -207,7 +207,7 @@ You can add ViWaves to Obtainium to receive updates directly from GitHub release
 | Background playback | Available |
 | Offline caching | Available |
 | Spotify playlist import | Available |
-| Apple Music playlist import | In progress |
+| Apple Music playlist import | In Progress |
 | Last.fm integration | Available |
 | Lyrics integration | Available |
 | Android Auto | Available |
