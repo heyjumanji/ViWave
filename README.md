@@ -207,10 +207,12 @@ You can add ViWaves to Obtainium to receive updates directly from GitHub release
 | Background playback | Available |
 | Offline caching | Available |
 | Spotify playlist import | Available |
+| Apple Music playlist import | In progress |
 | Last.fm integration | Available |
 | Lyrics integration | Available |
 | Android Auto | Available |
-| Lossless audio support | Available |
+| Discord RPC | Available|
+| Lossless audio support | Cancelled (not possible with free of cost) |
 | UI/UX refinements and animations | In Progress |
 | Bug fixes and performance improvements | Ongoing |
 
@@ -242,6 +244,8 @@ ViWaves builds upon the work and contributions of the open-source community.
 Special thanks to:
 
 - [ViMusic](https://github.com/vfsfitvnm/ViMusic) for the original inspiration.
+- [Metrolist]() for discord RPC infrastructure.
+- [Stash]() for Spotify Infrastructure.
 - [YouTube Internal Clients](https://github.com/zerodytrash/YouTube-Internal-Clients) for valuable research.
 - [Ionicons](https://github.com/ionic-team/ionicons) for icon resources.
 - [Ilham Fitrotul Hayat](https://www.flaticon.com/authors/ilham-fitrotul-hayat) for design resources.
