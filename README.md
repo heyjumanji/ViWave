@@ -130,8 +130,9 @@ The goal is simple: provide a clean, feature-rich, and enjoyable music listening
 - Background playback.
 - Offline caching for listening without an internet connection.
 - Audio normalization for consistent volume.
-- Hiress Lossless audio including High-quality streaming and Opus 256 kbps where available.
+- High-quality streaming including Opus 256 kbps where available.
 - Open YouTube and YouTube Music links directly in ViWaves.
+- Discord RPC - Showcase what you are listening with your friends on discord.
 
 ### Music Discovery
 
