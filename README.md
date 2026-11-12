@@ -26,7 +26,7 @@ A continuation of the ViMusic legacy, bringing together online streaming, local 
 <!-- Repository Statistics -->
 
 <a href="https://github.com/heyjumanji/ViWave/releases">
-  <img src="https://img.shields.io/badge/DOWNLOADS-VIEW_RELEASES-353344?style=for-the-badge&logo=github&logoColor=white" alt="Downloads" />
+  <img src="https://img.shields.io/github/downloads/heyjumanji/ViWave/total?style=for-the-badge&label=DOWNLOADS&labelColor=252538&color=353344&logo=github&logoColor=white" alt="Total Downloads" />
 </a>
 <a href="https://github.com/heyjumanji/ViWave/stargazers">
   <img src="https://img.shields.io/badge/STARS-STAR_ON_GITHUB-353344?style=for-the-badge&logo=github&logoColor=white" alt="Stars" />
