@@ -1,0 +1,157 @@
+
+name: Automatic Main APK Build
+
+on:
+  push:
+    branches:
+      - main
+
+  pull_request:
+    branches:
+      - main
+
+  workflow_dispatch:
+    inputs:
+      version_name:
+        description: 'APK Version Name (e.g., 2.0.0)'
+        required: true
+        type: string
+        default: '1.9.8'
+
+      version_code:
+        description: 'APK Version Code (e.g., 20)'
+        required: true
+        type: string
+        default: '19'
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    name: Build Signed APK
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Set up JDK 21
+        uses: actions/setup-java@v4
+        with:
+          java-version: '21'
+          distribution: 'zulu'
+          cache: gradle
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Setup Gradle
+        uses: gradle/actions/setup-gradle@v3
+
+      - name: Make Gradlew Executable
+        run: chmod +x gradlew
+
+      - name: Prepare Signing Keystore
+        id: prepare_keystore
+        env:
+          KEYSTORE_BASE64: ${{ secrets.KEYSTORE_BASE64 }}
+          KEY_STORE_PASSWORD: ${{ secrets.KEY_STORE_PASSWORD }}
+          ALIAS: ${{ secrets.ALIAS }}
+          KEY_PASSWORD: ${{ secrets.KEY_PASSWORD }}
+        run: |
+          if [ -n "$KEYSTORE_BASE64" ]; then
+            echo "Using secret keystore"
+            echo "$KEYSTORE_BASE64" | base64 -di > release.keystore
+
+            echo "store_password=${KEY_STORE_PASSWORD}" >> "$GITHUB_OUTPUT"
+            echo "key_alias=${ALIAS}" >> "$GITHUB_OUTPUT"
+            echo "key_password=${KEY_PASSWORD}" >> "$GITHUB_OUTPUT"
+          else
+            echo "Generating self-signed release keystore for direct installation"
+
+            keytool -genkeypair -v \
+              -keystore release.keystore \
+              -alias release \
+              -keyalg RSA \
+              -keysize 2048 \
+              -validity 10000 \
+              -storepass password \
+              -keypass password \
+              -dname "CN=ViWaves, OU=Mobile, O=ViWaves, L=Unknown, S=Unknown, C=US"
+
+            echo "store_password=password" >> "$GITHUB_OUTPUT"
+            echo "key_alias=release" >> "$GITHUB_OUTPUT"
+            echo "key_password=password" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Determine Version
+        id: determine_version
+        env:
+          INPUT_VERSION_NAME: ${{ inputs.version_name }}
+          INPUT_VERSION_CODE: ${{ inputs.version_code }}
+        run: |
+          VER_NAME="${INPUT_VERSION_NAME:-1.9.8}"
+          VER_CODE="${INPUT_VERSION_CODE:-19}"
+
+          if [ -z "$VER_NAME" ]; then
+            echo "Error: Version name cannot be empty"
+            exit 1
+          fi
+
+          if ! [[ "$VER_CODE" =~ ^[0-9]+$ ]] || [ "$VER_CODE" -lt 1 ]; then
+            echo "Error: Version code must be a positive integer"
+            exit 1
+          fi
+
+          echo "version_name=$VER_NAME" >> "$GITHUB_OUTPUT"
+          echo "version_code=$VER_CODE" >> "$GITHUB_OUTPUT"
+
+          echo "Building APK Version: $VER_NAME ($VER_CODE)"
+
+      - name: Build Release APK
+        env:
+          STORE_PASSWORD: ${{ steps.prepare_keystore.outputs.store_password }}
+          KEY_ALIAS: ${{ steps.prepare_keystore.outputs.key_alias }}
+          KEY_PASSWORD: ${{ steps.prepare_keystore.outputs.key_password }}
+          ANDROID_VERSION_NAME: ${{ steps.determine_version.outputs.version_name }}
+          ANDROID_VERSION_CODE: ${{ steps.determine_version.outputs.version_code }}
+        run: |
+          ./gradlew assembleRelease \
+            -Pandroid.injected.signing.store.file=$(pwd)/release.keystore \
+            -Pandroid.injected.signing.store.password="$STORE_PASSWORD" \
+            -Pandroid.injected.signing.key.alias="$KEY_ALIAS" \
+            -Pandroid.injected.signing.key.password="$KEY_PASSWORD"
+
+      - name: Upload Release APKs (Artifact)
+        uses: actions/upload-artifact@v4
+        with:
+          name: ViWaves-Release-APKs-${{ steps.determine_version.outputs.version_name }}-${{ github.run_number }}
+          path: app/build/outputs/apk/release/*.apk
+          if-no-files-found: error
+          retention-days: 30
+
+      - name: Publish Direct Installable APKs to Release
+        if: (github.event_name == 'push' && github.ref == 'refs/heads/main') || github.event_name == 'workflow_dispatch'
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: continuous
+          name: ViWaves Continuous Build (v${{ steps.determine_version.outputs.version_name }})
+          body: |
+            Automated build for version ${{ steps.determine_version.outputs.version_name }}
+            Version Code: ${{ steps.determine_version.outputs.version_code }}
+
+            Commit: ${{ github.sha }}
+
+            Download the `.apk` file below directly to install on your Android device.
+          draft: false
+          prerelease: true
+          files: app/build/outputs/apk/release/*.apk
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Clean Up Temporary Keystore
+        if: always()
+        run: rm -f release.keystore

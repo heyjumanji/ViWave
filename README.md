@@ -1,4 +1,3 @@
-
 <div align="center">
 
 <img src="https://i.ibb.co/vxL81f4Y/file-00000000cfc88208941479935cfc0750.png" width="112" alt="ViWaves Logo" />
@@ -26,14 +25,14 @@ A continuation of the ViMusic legacy, bringing together online streaming, local 
 <!-- Repository Statistics -->
 
 <a href="https://github.com/heyjumanji/ViWave/releases">
-  <img src="https://img.shields.io/github/downloads/heyjumanji/ViWave/total?style=for-the-badge&label=DOWNLOADS&labelColor=252538&color=353344&logo=github&logoColor=white" alt="Total Downloads" />
+  <img src="https://img.shields.io/github/downloads/heyjumanji/ViWave/total?style=for-the-badge&label=downloads&labelColor=252538&color=353344&logo=github&logoColor=white" alt="Downloads" />
 </a>
 <a href="https://github.com/heyjumanji/ViWave/stargazers">
-  <img src="https://img.shields.io/badge/STARS-STAR_ON_GITHUB-353344?style=for-the-badge&logo=github&logoColor=white" alt="Stars" />
+  <img src="https://img.shields.io/github/stars/heyjumanji/ViWave?style=for-the-badge&label=stars&labelColor=252538&color=353344&logo=github&logoColor=white" alt="Stars" />
 </a>
 
-<a href="https://github.com/heyjumanji/ViWave/fork">
-  <img src="https://img.shields.io/badge/FORKS-FORK_REPOSITORY-353344?style=for-the-badge&logo=git&logoColor=white" alt="Forks" />
+<a href="https://github.com/heyjumanji/ViWave/network/members">
+  <img src="https://img.shields.io/github/forks/heyjumanji/ViWave?style=for-the-badge&label=forks&labelColor=252538&color=353344&logo=git&logoColor=white" alt="Forks" />
 </a>
 <img src="https://img.shields.io/badge/Android-Supported-353344?style=for-the-badge&labelColor=252538&logo=android&logoColor=8B7CF6" alt="Android" />
 
@@ -48,13 +47,13 @@ A continuation of the ViMusic legacy, bringing together online streaming, local 
   <img src="https://img.shields.io/github/issues/heyjumanji/ViWave?style=for-the-badge&label=issues&labelColor=252538&color=353344&logo=github&logoColor=white" alt="Issues" />
 </a>
 <a href="https://github.com/heyjumanji/ViWave/blob/main/LICENSE">
-  <img src="https://img.shields.io/badge/LICENSE-VIEW_LICENSE-353344?style=for-the-badge&logo=opensourceinitiative&logoColor=white" alt="License" />
+  <img src="https://img.shields.io/github/license/heyjumanji/ViWave?style=for-the-badge&label=license&labelColor=252538&color=353344&logo=opensourceinitiative&logoColor=white" alt="License" />
 </a>
 
 <a href="#roadmap">
   <img src="https://img.shields.io/badge/Roadmap-View-353344?style=for-the-badge&labelColor=252538&logo=github&logoColor=white" alt="Roadmap" />
 </a>
-<a href="YOUR_DISCORD_INVITE_LINK">
+<a href="https://discord.gg/YJez4tpVk2">
   <img src="https://img.shields.io/badge/Discord-Join_Server-353344?style=for-the-badge&labelColor=252538&logo=discord&logoColor=7289DA" alt="Discord" />
 </a>
 
@@ -188,6 +187,14 @@ The goal is simple: provide a clean, feature-rich, and enjoyable music listening
 1. Visit the [latest releases](https://github.com/heyjumanji/ViWave/releases/latest).
 2. Download the latest APK.
 3. Install it on your Android device.
+
+### Obtainium
+
+<a href="https://apps.obtainium.imranr98.dev/redirect?r=obtainium://add/https://github.com/heyjumanji/ViWave/">
+  <img src="https://github.com/ImranR98/Obtainium/blob/main/assets/graphics/badge_obtainium.png" height="48" alt="Get it on Obtainium" />
+</a>
+
+You can add ViWaves to Obtainium to receive updates directly from GitHub releases.
 
 ---
 
